@@ -3,25 +3,25 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/utils/tailwind-utils";
 
 const buttonVariants = cva(
-  "rounded-small inline-flex items-center justify-center whitespace-nowrap font-medium transition-all font-regular !text-neutral-50 select-none transition-colors",
+  "rounded-small inline-flex items-center justify-center whitespace-nowrap font-medium transition-all font-regular text-neutral-50 select-none transition-colors disabled:cursor-default cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400",
   {
     variants: {
       variant: {
         default:
-          "bg-neutral-900 hover:bg-neutral-800 active:bg-neutral-900 disabled:bg-gray-50 disabled:text-neutral-400 disabled:cursor-default cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400",
-        // secondary:
-        //   "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
-
-        // destructive:
-        //   "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
-        // outline:
-        //   "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+          "bg-neutral-900 hover:bg-neutral-800 active:bg-neutral-900 disabled:bg-gray-50 disabled:text-neutral-400  ",
+        secondary:
+          "bg-neutral-100  hover:bg-neutral-2000 active:bg-neutral-100 active:border active:border-neutral-400 disabled:bg-neutral-50 disabled:text-neutral-400 text-neutral-black ",
+        outline:
+          "border border-neutral-black text-neutral-black hover:border-neutral-400 active:border-neutral-400 active:border-2  disabled:border-neutral-300  disabled:text-neutral-300",
+        destructive: "bg-error-default text-white ",
         // ghost:
         //   "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         // link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
-        small: "px-4 py-3 text-p3 max-h-[32px]",
+        large: "py-4 px-6 text-p1 max-h-[48px]",
+        medium: "py-4 px-5 text-p2 max-h-[40px]",
+        small: "py-3 px-4 text-p3 max-h-[32px]",
       },
     },
     defaultVariants: {

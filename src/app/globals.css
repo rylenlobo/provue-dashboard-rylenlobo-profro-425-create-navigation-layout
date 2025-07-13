@@ -50,6 +50,7 @@
   --color-hover-selected: #f4f4f4;
   --color-neutral-black: #0a0a0a;
   --color-neutral-gray: #737373;
+  --color-neutral-300: #cacaca;
 
   /* Functional / Feedback Colors */
   --color-info-light: #e7f0ff;
@@ -149,6 +150,7 @@
   --color-gray-100: var(--color-gray-100);
   --color-hover-gray: var(--color-hover-gray);
   --color-hover-selected: var(--color-hover-selected);
+  --color-neutral-300: var(--color-neutral-300);
 
   /* Border colors */
   --color-border-light: var(--color-border-light);
